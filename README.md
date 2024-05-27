@@ -18,10 +18,12 @@ The model uses a logistic regression classifier wrapped in a multi-output classi
 **Encoding Labels**: The categorical labels for tool, heading, and target are encoded into numerical values using LabelEncoder.
 
 *🤩 Loading and Parsing the JSON Data*
+
 The dataset is parsed from a JSON file and loaded into a pandas DataFrame, making it easy to manipulate and analyze.
 
 *🌐 Splitting the Data*
-Train-Test Split: The dataset is split into training and testing sets to evaluate the model's performance on unseen data. This ensures that the model is not overfitting and can generalize well.
+
+**Train-Test Split**: The dataset is split into training and testing sets to evaluate the model's performance on unseen data. This ensures that the model is not overfitting and can generalize well.
 
 *🛠️ Creating a Pipeline*
 
@@ -41,6 +43,7 @@ Train-Test Split: The dataset is split into training and testing sets to evaluat
 *🌟 Saving the Model and Encoders*
 
 **Persistence**: The trained model and the label encoders are saved to disk using joblib, enabling easy reuse and deployment without retraining.
+
 *🔍 Prediction*
 
 **Loading the Model** : The saved model and encoders are loaded.
